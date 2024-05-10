@@ -12,27 +12,3 @@ if __name__ == '__main__':
     process.crawl(WbSpider)
     process.start()
 
-"""
-    def save_to_csv(data, filename):
-        # Записываем данные в CSV-файл
-        with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
-            fieldnames = ['title', 'link']
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
-            writer.writeheader()
-            for item in data:
-                writer.writerow(item)
-
-
-    if __name__ == "__main__":
-        # Получаем данные
-        news_data = name_parse()
-
-        if news_data:
-            # Сохраняем данные в CSV-файл
-            save_to_csv(news_data, 'news_data.csv')
-            print("Данные успешно сохранены в файл 'news_data.csv'")
-        else:
-            print("Не удалось получить данные.")
-
-"""
